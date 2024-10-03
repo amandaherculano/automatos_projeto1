@@ -39,7 +39,7 @@ class VendingMachineAutomaton:
 # Interface Tkinter
 janela = Tk()
 janela.title("Simulador de Máquina de Vendas")
-janela.geometry("700x250")
+janela.geometry("700x300")
 
 # Instanciar o autômato
 vm = VendingMachineAutomaton()
@@ -51,6 +51,9 @@ texto_titulo.grid(row=0, column=0, pady=20, padx=10)
 saldo = 0
 texto_saldo = Label(janela, text="Saldo: R$ " + str(saldo),  font=("Calibri", 13), fg="dimgray")
 texto_saldo.grid(row=0, column=4, pady=20, padx=10)
+
+texto_titulo = Label(janela, text="Valor R$ 2,00", font=("Calibri", 13), fg="palegreen4")
+texto_titulo.grid(row=1, column=0)
 
 texto_orientacao = Label(janela, text="Selecione valor para inserir:", font=("Calibri", 13), fg="dimgray")
 texto_orientacao.grid(row=2, column=0)
@@ -97,6 +100,18 @@ botao_1.grid(row=3, columnspan=5, pady=30)
 # Exibir mensagem de liberação
 texto_liberacao = Label(janela, text="", fg="darkolivegreen", font=("Calibri", 13))
 texto_liberacao.grid(row=4, columnspan=5)
+
+texto_nomes = Label(janela, text="Desenvolvido por: ", font=("Calibri", 13), fg="violetred3")
+texto_nomes.grid(row=5, column=0, pady=11)
+
+texto_amanda = Label(janela, text="Amanda Herculano, 22.00986-8", font=("Calibri", 13), fg="violetred3")
+texto_amanda.grid(row=6, column=0, pady=10)
+
+texto_iris = Label(janela, text="Íris Melero, 23.01109-2", font=("Calibri", 13), fg="violetred3")
+texto_iris.grid(row=7, column=0, pady=10)
+
+texto_maria= Label(janela, text="Maria Rodrigues, 23.00018-0", font=("Calibri", 13), fg="violetred3")
+texto_maria.grid(row=8, column=0, pady=10)
 
 # Manter a janela aberta
 janela.mainloop()
